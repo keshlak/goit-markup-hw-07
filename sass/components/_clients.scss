@@ -1,0 +1,38 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.client-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list .client-link {
+  display: inline-flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $svg-fill;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: $svg-fill;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
